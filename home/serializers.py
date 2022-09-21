@@ -11,7 +11,8 @@ class HackathonSerializer(serializers.ModelSerializer):
                   'member2name', 'member2gender', 
                   'member3name', 'member3gender', 
                   'member4name', 'member4gender', 
-                  'member5name', 'member5gender', 'date']
+                  'member5name', 'member5gender', 
+                  'amount', 'transactionid', 'date']
         
     
 class ContactSerializer(serializers.ModelSerializer):

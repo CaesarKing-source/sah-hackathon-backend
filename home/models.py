@@ -1,3 +1,4 @@
+from codecs import backslashreplace_errors
 from django.db import models
 
 
@@ -46,6 +47,8 @@ class Hackathon(models.Model):
     
     member5name = models.CharField(max_length=100)
     member5gender = models.CharField(max_length=10, choices=GENDER )
+    amount = models.ImageField(upload_to='media/', blank = True)
+    transactionid = models.CharField(max_length=100)
     
     date = models.DateField(auto_now_add=True)
     
